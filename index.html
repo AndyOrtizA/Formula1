@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #e91e63;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        main {
+            flex: 1;
+        }
+        section {
+            padding: 2em;
+            background-color: white;
+            margin: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .driver-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .historic-driver {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .historic-driver img {
+            border-radius: 50%;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Todo sobre la Fórmula 1</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#equipos">Equipos</a></li>
+            <li><a href="#pilotos">Pilotos</a></li>
+            <li><a href="#circuitos">Circuitos</a></li>
+            <li><a href="#podios">Podios</a></li>
+            <li><a href="#historicos">Pilotos Históricos</a></li>
+            <li><a href="#campeonato">Campeonato 2024</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>La Fórmula 1 es la categoría reina del automovilismo. Aquí encontrarás información sobre los equipos, pilotos y circuitos más importantes del mundo de la F1.</p>
+        </section>
+        <section id="equipos">
+            <h2>Equipos</h2>
+            <table>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Sede</th>
+                    <th>Jefe de equipo</th>
+                </tr>
+                <tr>
+                    <td>Mercedes</td>
+                    <td>Brackley, Reino Unido</td>
+                    <td>Toto Wolff</td>
+                </tr>
+                <tr>
+                    <td>Red Bull Racing</td>
+                    <td>Milton Keynes, Reino Unido</td>
+                    <td>Christian Horner</td>
+                </tr>
+                <tr>
+                    <td>Ferrari</td>
+                    <td>Maranello, Italia</td>
+                    <td>Fred Vasseur</td>
+                </tr>
+                <tr>
+                    <td>McLaren</td>
+                    <td>Woking, Reino Unido</td>
+                    <td>Zak Brown</td>
+                </tr>
+                <tr>
+                    <td>Alpine</td>
+                    <td>Enstone, Reino Unido</td>
+                    <td>Otmar Szafnauer</td>
+                </tr>
+                <tr>
+                    <td>AlphaTauri</td>
+                    <td>Faenza, Italia</td>
+                    <td>Franz Tost</td>
+                </tr>
+                <tr>
+                    <td>Aston Martin</td>
+                    <td>Silverstone, Reino Unido</td>
+                    <td>Mike Krack</td>
+                </tr>
+                <tr>
+                    <td>Williams</td>
+                    <td>Grove, Reino Unido</td>
+                    <td>James Vowles</td>
+                </tr>
+                <tr>
+                    <td>Alfa Romeo</td>
+                    <td>Hinwil, Suiza</td>
+                    <td>Alessandro Alunni Bravi</td>
+                </tr>
+                <tr>
+                    <td>Haas</td>
+                    <td>Kannapolis, Estados Unidos</td>
+                    <td>Guenther Steiner</td>
+                </tr>
+            </table>
+        </section>
+        <section id="pilotos">
+            <h2>Pilotos</h2>
+            <table>
+                <tr>
+                    <th>Piloto</th>
+                    <th>Equipo</th>
+                    <th>Nacionalidad</th>
+                </tr>
+                <tr>
+                    <td>Lewis Hamilton</td>
+                    <td>Mercedes</td>
+                    <td>Reino Unido</td>
+                </tr>
+                <tr>
+                    <td>George Russell</td>
+                    <td>Mercedes</td>
+                    <td>Reino Unido</td>
+                </tr>
+                <tr>
+                    <td>Max Verstappen</td>
+                    <td>Red Bull Racing</td>
+                    <td>Países Bajos</td>
+                </tr>
+                <tr>
+                    <td>Sergio Pérez</td>
+                    <td>Red Bull Racing</td>
+                    <td>México</td>
+                </tr>
+                <tr>
+                    <td>Charles Leclerc</td>
+                    <td>Ferrari</td>
+                    <td>Mónaco</td>
+                </tr>
+                <tr>
+                    <td>Carlos Sainz</td>
+                    <td>Ferrari</td>
+                    <td>España</td>
+                </tr>
+                <tr>
+                    <td>Lando Norris</td>
+                    <td>McLaren</td>
+                    <td>Reino Unido</td>
+                </tr>
+                <tr>
+                    <td>Oscar Piastri</td>
+                    <td>McLaren</td>
+                    <td>Australia</td>
+                </tr>
+                <tr>
+                    <td>Pierre Gasly</td>
+                    <td>Alpine</td>
+                    <td>Francia</td>
+                </tr>
+                <tr>
+                    <td>Esteban Ocon</td>
+                    <td>Alpine</td>
+                    <td>Francia</td>
+                </tr>
+                <tr>
+                    <td>Yuki Tsunoda</td>
+                    <td>AlphaTauri</td>
+                    <td>Japón</td>
+                </tr>
+                <tr>
+                    <td>Nyck de Vries</td>
+                    <td>AlphaTauri</td>
+                    <td>Países Bajos</td>
+                </tr>
+                <tr>
+                    <td>Fernando Alonso</td>
+                    <td>Aston Martin</td>
+                    <td>España</td>
+                </tr>
+                <tr>
+                    <td>Lance Stroll</td>
+                    <td>Aston Martin</td>
+                    <td>Canadá</td>
+                </tr>
+                <tr>
+                    <td>Alex Albon</td>
+                    <td>Williams</td>
+                    <td>Tailandia</td>
+                </tr>
+                <tr>
+                    <td>Logan Sargeant</td>
+                    <td>Williams</td>
+                    <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td>Valtteri Bottas</td>
+                    <td>Alfa Romeo</td>
+                    <td>Finlandia</td>
+                </tr>
+                <tr>
+                    <td>Guanyu Zhou</td>
+                    <td>Alfa Romeo</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Kevin Magnussen</td>
+                    <td>Haas</td>
+                    <td>Dinamarca</td>
+                </tr>
+                <tr>
+                    <td>Nico Hülkenberg</td>
+                    <td>Haas</td>
+                    <td>Alemania</td>
+                </tr>
+            </table>
+        </section>
+        <section id="circuitos">
+            <h2>Circuitos más importantes</h2>
+            <p>Los siguientes circuitos no solo son importante spor sus características y la historia que tienen, sino tambien por la pasión 
+                el entusiasmo que genera entre los aficionados y los pilotos de la Fórmula 1.
+            </p>
+            <ol>
+                <li><h3>Gran Premio de Mónaco - Circuito de Mónaco</h3></li>
+                <li><h3>Gran Premio de Gran Bretaña - Circuito de Silverstone</h3></li>
+                <li><h3>Gran Premio de Bélgica - Circuito de Spa-Francorchamps</h3></li>
+                <li><h3>Gran Premio de Italia - Autódromo Nazionale Monza</h3></li>
+                <li><h3>Gran Premio de Japón - Circuito de Suzuka</h3></li>
+                <li><h3>Gran Premio de España - Circuito de Barcelona-Catalunya</h3></li>
+                <li><h3>Gran Premio de Singapur - Circuito urbano de Marina Bay</h3></li>
+                <li><h3>Gran Premio de México - Autódromo Hermanos Rodríguez</h3></li>
+                <li><h3>Gran Premio de Estados Unidos - Circuito de las Américas</h3></li>
+
+            </ol>
+        </section>
+
+        </section>
+        <section id="historicos">
+            <h2>Pilotos Históricos</h2>
+            <div class="historic-driver">
+                <img src="https://autoshowtv.com.mx/wp-content/uploads/2024/05/Ayrton-Senna.jpg" alt="Ayrton Senna" width="100px" >
+                <div>
+                    <h3>Ayrton Senna</h3>
+                    <p>Ayrton Senna fue uno de los pilotos más talentosos y carismáticos de la historia de la F1, conocido por su habilidad en la lluvia y su feroz competitividad.</p>
+                </div>
+            </div>
+            <div class="historic-driver">
+                <img src="https://th.bing.com/th/id/R.08d36b61f710477b9ba11ea5c06203d5?rik=nAh9LeCmn8LbdQ&pid=ImgRaw&r=0" alt="Michael Schumacher" width="100">
+                <div>
+                    <h3>Michael Schumacher</h3>
+                    <p>Michael Schumacher es considerado uno de los mejores pilotos de todos los tiempos, con siete campeonatos mundiales y numerosos récords en su haber.</p>
+                </div>
+            </div>
+            <div class="historic-driver">
+                <img src="https://static01.nyt.com/images/2019/05/22/sports/21lauda5/21lauda5-superJumbo.jpg?quality=75&auto=webp" alt="Niki Lauda" width="100px">
+                <div>
+                    <h3>Niki Lauda</h3>
+                    <p>Niki Lauda es famoso no solo por sus tres campeonatos mundiales, sino también por su impresionante regreso a las carreras tras un grave accidente en 1976.</p>
+                </div>
+            </div>
+            <!-- Añade más pilotos históricos según sea necesario -->
+        </section>
+        <section id="campeonato">
+            <h2>Campeonato de Pilotos 2024</h2>
+            <table>
+                <tr>
+                    <th>Posición</th>
+                    <th>Piloto</th>
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Max Verstappen</td>
+                    <td>Red Bull Racing</td>
+                    <td>255</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lando Norris</td>
+                    <td>McLaren</td>
+                    <td>171</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charles Leclerc</td>
+                    <td>Ferrari</td>
+                    <td>150</td>
+                </tr>
+                <!-- Añade más filas según sea necesario -->
+            </table>
+            <h2>Campeonato de Constructores 2024</h2>
+            <table>
+                <tr>
+                    <th>Posición</th>
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Red Bull Racing</td>
+                    <td>373</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mercedes</td>
+                    <td>302</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ferrari</td>
+                    <td>295</td>
+                </tr>
+                <!-- Añade más filas según sea necesario -->
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fórmula 1. Andrea Ortiz.</p>
+    </footer>
+</body>
+</html>
